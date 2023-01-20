@@ -6,8 +6,10 @@ class Moon < Formula
   license "MIT"
 
   bottle do
+    root_url "https://github.com/moonrepo/homebrew-moon/releases/download/moon-0.22.0"
     rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "2ed63b867804a4d999b7ea784d2b54caa8245bcb92c529625759830c3a228220"
+    sha256 cellar: :any_skip_relocation, monterey:     "7543eef00f74e439f84ea3b3f061b5ff7c267983053b7d79fa566b225e9de50e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e782dccc94b2c4ecc67aaa16a92df67053b0107478d39cf883d992fbafc1fa5d"
   end
 
   depends_on "rust" => :build
