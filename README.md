@@ -1,14 +1,11 @@
 # Moonrepo Moon
 
-## How do I install these formula?
 
-`brew install moonrepo/moon/<formula>`
+```shell
+brew tap moonrepo/tap
+brew install moonrepo/tap/moon
+```
 
-Or `brew tap moonrepo/moon` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
 
 
 ## Development of moon homebrew formula:
@@ -30,8 +27,8 @@ cd $(brew --repository)/Library/Taps/moonrepo/homebrew-moon
 
 ```
 cd $(brew --repository)/Library/Taps/moonrepo/homebrew-moon
-brew install moonrepo/moon/moon --build-bottle
-brew bottle moonrepo/moon/moon
+brew install moonrepo/tap/moon --build-bottle
+brew bottle moonrepo/tap/moon
 ```
 
 #### Step 3: Merge base PR
@@ -45,5 +42,6 @@ Go to the release: https://github.com/moonrepo/homebrew-moon/releases and upload
 #### Step 5: Add another PR with the new bottle asset.
 
 Example PR: https://github.com/moonrepo/homebrew-moon/pull/2/files
+
 
 
