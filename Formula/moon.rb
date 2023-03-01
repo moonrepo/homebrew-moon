@@ -1,8 +1,8 @@
 class Moon < Formula
   desc "Repository management, organization, orchestration, and notification tool"
   homepage "https://moonrepo.dev"
-  url "https://github.com/moonrepo/moon/archive/refs/tags/@moonrepo/cli@0.24.0.tar.gz"
-  sha256 "5d42b629df5a8e415c8240987846d11a01f7920f3194b563024b85bb7a3e96ef"
+  url "https://github.com/moonrepo/moon/archive/refs/tags/@moonrepo/cli@0.25.0.tar.gz"
+  sha256 "1f962356646f81ac4d18752eaef639f80d875e3d851a06636c2e74f73db888e8"
   license "MIT"
 
   bottle do
