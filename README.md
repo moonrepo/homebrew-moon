@@ -17,16 +17,17 @@ Most bottles can be built with the Github actions, but the MacOS 13 versions nee
 #### Step 1: Update the base formula
 
 ```
-cd $(brew --repository)/Library/Taps/moonrepo/homebrew-moon
+cd $(brew --repository)/Library/Taps/moonrepo/homebrew-tap
 ```
 
-- Update moon.rb with the correct `url` and `sha256`
-- Make a PR
+1. Update moon.rb with the correct `url` and `sha256`
+2. Remove the `bottle` block. The PR will add it back in once it's built.
+3. Make a PR
 
-#### Step 2: Build a bottle locally on a MacOS 13 machine
+#### Step 2: (while the PR is building) Build a bottle locally on a MacOS 13 machine
 
 ```
-cd $(brew --repository)/Library/Taps/moonrepo/homebrew-moon
+cd $(brew --repository)/Library/Taps/moonrepo/homebrew-tap
 brew install moonrepo/tap/moon --build-bottle
 brew bottle moonrepo/tap/moon
 ```
@@ -42,6 +43,7 @@ Go to the release: https://github.com/moonrepo/homebrew-moon/releases and upload
 #### Step 5: Add another PR with the new bottle asset.
 
 Example PR: https://github.com/moonrepo/homebrew-moon/pull/2/files
+
 
 
 
