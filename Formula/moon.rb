@@ -5,6 +5,12 @@ class Moon < Formula
   sha256 "d6fed87b93a74fcc23a95a37598f5074214c506ac2df56e4b83a7070c39a2061"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/moonrepo/homebrew-tap/releases/download/moon-0.26.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "93448cec5f1be9257eb08014652495ac6de7baa59bc64a8ccc9ec849de995dcf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e522fb09388b97687023990963032a7dc44a5a52ea26668bc7f677ca9cd74997"
+  end
+
   depends_on "rust" => :build
 
   def install
